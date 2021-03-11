@@ -10,13 +10,13 @@ import SwiftUI
 
 
 
-struct ActivityItem : Equatable{
+public struct ActivityItem : Equatable{
     var date : Date
     var duration : Int
 }
 
 
-class ActivityViewData {
+public class ActivityViewData {
     enum TileColors : CaseIterable{
         case tier1, tier2, tier3, tier4, tier5
     }

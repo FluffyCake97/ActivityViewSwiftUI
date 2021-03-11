@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ActivityView: View {
+public struct ActivityView: View {
 
     var Data : ActivityViewData
     var showLegend : Bool
