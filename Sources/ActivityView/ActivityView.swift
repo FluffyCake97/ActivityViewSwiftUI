@@ -9,14 +9,19 @@ import SwiftUI
 
 public struct ActivityView: View {
 
-    public var Data : ActivityViewData
-    public var showLegend : Bool
+    let data : ActivityViewData
+    let showLegend : Bool
+    
+    public init(data : ActivityViewData, showLegend : Bool){
+        self.data = data
+        self.showLegend = showLegend
+    }
     
     public var body: some View {
         VStack{
             HStack{
-                ForEach(0..<Data.all.count){ index in
-                    weekTiles(data: Data.all[index],text: Data.monthIdentifier[index] )
+                ForEach(0..<data.all.count){ index in
+                    weekTiles(data: data.all[index],text: data.monthIdentifier[index] )
                 }
             }
             if showLegend {
