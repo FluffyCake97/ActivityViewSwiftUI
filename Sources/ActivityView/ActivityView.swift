@@ -9,8 +9,8 @@ import SwiftUI
 
 public struct ActivityView: View {
 
-    var Data : ActivityViewData
-    var showLegend : Bool
+    public var Data : ActivityViewData
+    public var showLegend : Bool
     
     public var body: some View {
         VStack{
