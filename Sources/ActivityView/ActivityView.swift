@@ -12,7 +12,7 @@ public struct ActivityView: View {
     var Data : ActivityViewData
     var showLegend : Bool
     
-    var body: some View {
+    public var body: some View {
         VStack{
             HStack{
                 ForEach(0..<Data.all.count){ index in
