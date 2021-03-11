@@ -36,7 +36,7 @@ struct weekTiles:View {
     var body: some View{
         VStack{
             Text(text)
-                .font(.caption2)
+                .font(.caption)
                 .foregroundColor(.gray)
                 .padding(.horizontal , -5)
             ForEach(0..<data.count){ index in
@@ -50,7 +50,7 @@ struct legend:View {
     var body: some View{
         HStack{
             Text("Less")
-                .font(.caption2)
+                .font(.caption)
                 .foregroundColor(.gray)
             Rectangle()
                 .frame(width:12,height: 12)
@@ -73,7 +73,7 @@ struct legend:View {
                 .foregroundColor(ActivityViewData.TileColors.tier5.color)
                 .padding(-3)
             Text("More")
-                .font(.caption2)
+                .font(.caption)
                 .foregroundColor(.gray)
         }
     }
