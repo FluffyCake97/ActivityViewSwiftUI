@@ -26,7 +26,7 @@ public class ActivityViewData {
     var monthIdentifier = [String]()
     var all = [[TileColors]]()
     
-    init(weeksNumber : Int, activeChartItems : [ActivityItem]?) {
+    public init(weeksNumber : Int, activeChartItems : [ActivityItem]?) {
         self.weeksNumber = weeksNumber
         self.activityItems = activeChartItems
         refresh()
