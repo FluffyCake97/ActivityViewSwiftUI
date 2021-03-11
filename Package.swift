@@ -21,8 +21,6 @@ let package = Package(
         .target(
             name: "ActivityView",
             dependencies: []),
-        .testTarget(
-            name: "ActivityViewTests",
-            dependencies: ["ActivityView"]),
+
     ]
 )
