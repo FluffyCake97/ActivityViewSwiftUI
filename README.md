@@ -35,4 +35,4 @@ struct ContentView_Previews: PreviewProvider {
 }
 ```
 
-![SwiftUI](./ScreenShot.png)
+![SwiftUI](./Screenshot.png)
