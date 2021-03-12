@@ -13,6 +13,10 @@ import SwiftUI
 public struct ActivityItem : Equatable{
     var date : Date
     var duration : Int
+    public init(date:Date, duration:Int){
+        self.date = date
+        self.duration = duration
+    }
 }
 
 
