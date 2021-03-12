@@ -35,4 +35,4 @@ struct ContentView_Previews: PreviewProvider {
 }
 ```
 
-![SwiftUI](./Screenshot.png){:height="100px"}
+![SwiftUI](./Screenshot.png)
