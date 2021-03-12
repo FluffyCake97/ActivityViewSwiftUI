@@ -35,5 +35,4 @@ struct ContentView_Previews: PreviewProvider {
 }
 ```
 
-<img src="./Screenshot.png" width="150"  alt="图片描述文字"/>
-![SwiftUI](./Screenshot.png)
+<img src="./Screenshot.png" width="300"  alt="ActivityView"/>
