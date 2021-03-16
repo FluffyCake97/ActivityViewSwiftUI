@@ -88,7 +88,7 @@ public class ActivityViewData {
                     case let x where x<=4*tierInterval : tempResults.append(.tier4)
                     case let x where x<=5*tierInterval : tempResults.append(.tier5)
                 default:
-                    tempResults.append(.tier1)
+                    tempResults.append(.tier5)
                 }
             }
             results.append(tempResults)
