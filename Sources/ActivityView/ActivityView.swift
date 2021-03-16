@@ -19,7 +19,7 @@ public struct ActivityView: View {
     
     public var body: some View {
         VStack{
-            HStack{
+            HStack(alignment:.bottom){
                 ForEach(0..<data.all.count){ index in
                     weekTiles(data: data.all[index],text: data.monthIdentifier[index] )
                 }
@@ -61,25 +61,30 @@ struct legend:View {
                 .frame(width:12,height: 12)
                 .foregroundColor(ActivityViewData.TileColors.tier1.color)
                 .padding(-3)
+                .cornerRadius(1.0)
             Rectangle()
                 .frame(width:12,height: 12)
                 .foregroundColor(ActivityViewData.TileColors.tier2.color)
                 .padding(-3)
+                .cornerRadius(1.0)
             Rectangle()
                 .frame(width:12,height: 12)
                 .foregroundColor(ActivityViewData.TileColors.tier3.color)
                 .padding(-3)
+                .cornerRadius(1.0)
             Rectangle()
                 .frame(width:12,height: 12)
                 .foregroundColor(ActivityViewData.TileColors.tier4.color)
                 .padding(-3)
+                .cornerRadius(1.0)
             Rectangle()
                 .frame(width:12,height: 12)
                 .foregroundColor(ActivityViewData.TileColors.tier5.color)
                 .padding(-3)
+                .cornerRadius(1.0)
             Text("More")
                 .font(.caption)
-                .foregroundColor(.gray)
+                .foregroundColor(.secondary)
         }
     }
 }
@@ -92,6 +97,7 @@ struct dayTile:View {
                 .frame(width:15,height: 15)
                 .foregroundColor(tier.color)
                 .padding(-3)
+                .cornerRadius(1.0)
         }
     }
 }

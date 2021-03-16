@@ -10,7 +10,7 @@ import SwiftUI
 
 
 
-public struct ActivityItem : Equatable{
+public struct ActivityItem : Equatable,Codable{
     var date : Date
     var duration : Int
     public init(date:Date, duration:Int){
