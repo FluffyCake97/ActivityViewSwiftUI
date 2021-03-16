@@ -94,7 +94,7 @@ struct dayTile:View {
     var body: some View{
         VStack{
             Rectangle()
-                .frame(width:15,height: 15)
+                .frame(width:20,height: 20)
                 .foregroundColor(tier.color)
                 .padding(-3)
                 .cornerRadius(1.0)
