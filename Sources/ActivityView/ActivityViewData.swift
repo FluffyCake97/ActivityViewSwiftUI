@@ -11,8 +11,8 @@ import SwiftUI
 
 
 public struct ActivityItem : Equatable,Codable,Hashable{
-    var date : Date
-    var duration : Int
+    public var date : Date
+    public var duration : Int
     public init(date:Date, duration:Int){
         self.date = date
         self.duration = duration
