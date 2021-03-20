@@ -132,7 +132,8 @@ extension ActivityViewData.TileColors{
 extension Date{
     func monthNumberOfYear(numberOfLastWeeks:Int) -> String? {
         let f = Calendar.current.dateComponents([.month], from: self.addingTimeInterval(TimeInterval(-numberOfLastWeeks*604800))).month
-        return DateFormatter().monthSymbols[f! - 1].prefix(3).description
+        let c = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
+        return c[f!]
     }
     
     func dayNumberOfWeek() -> Int? {
