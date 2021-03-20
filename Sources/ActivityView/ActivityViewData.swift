@@ -133,7 +133,7 @@ extension Date{
     func monthNumberOfYear(numberOfLastWeeks:Int) -> String? {
         let f = Calendar.current.dateComponents([.month], from: self.addingTimeInterval(TimeInterval(-numberOfLastWeeks*604800))).month
         let c = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
-        return c[f!]
+        return c[f!-1]
     }
     
     func dayNumberOfWeek() -> Int? {
